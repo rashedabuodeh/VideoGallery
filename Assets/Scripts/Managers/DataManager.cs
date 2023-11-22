@@ -54,7 +54,7 @@ public class DataManager : MonoBehaviour
         if (EmailInputField.text == string.Empty)
             Debug.Log("fill the email ");
 
-        if (_inputValidation.UsernameIsValid)
+        if (_inputValidation.UsernameIsValid && _inputValidation.EmailIsValid)
         {
             SaveToFile(GetSubmitedUserData());
             _registrationPanel.SetActive(false);
